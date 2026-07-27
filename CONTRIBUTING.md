@@ -21,6 +21,7 @@ Here are some ways to contribute to the project, from easiest to most difficult:
   - [Building](#building)
   - [Testing](#testing)
   - [Wiring a checkout into an application](#wiring-a-checkout-into-an-application)
+- [AI contribution guidelines](#ai-contribution-guidelines)
 
 ## Issues
 
@@ -202,3 +203,18 @@ echo "console.log('it worked');" >> index.ts
 ```
 
 Visit http://localhost:3000/ and open your browsers dev console. After the Apollo Client rebuild finishes, you should see `it worked` in the console.
+
+## AI contribution guidelines
+
+We understand that more and more code is written by AI-assisted coding tools these days and as such, it is easier than ever to contribute to Apollo Client in the form of issues and PRs. Triaging issues and reviewing AI-assisted PRs tend to take up more maintainer bandwidth than traditional contributions and can take away opportunities for advancement in other areas of the library.
+
+While we encourage you to make use of AI tools to help make your work as efficient as possible, we ask that you use AI responsibly:
+
+- Always review AI-generated code before submitting a PR.
+- Only open issues and PRs that you understand yourself. The maintainers tend to ask followup questions about the issue or design choices in a PR and you need to be able to explain them.
+- Do not ignore the issue templates. Open an issue first to discuss solutions with the maintainers before opening PRs to reach agreement on how best to fix. The maintainers often have additional context about the code that might be relevant to the problem.
+- Avoid AI-generated content in comments, especially in response to questions and feedback posted by the maintainers. LLMs tend to take maintainer feedback verbatim and make changes without additional discussion. This adds a lot of churn and maintainers' time to constantly re-review changes that might not address the feedback.
+- Do not open drive-by issues created by AI tools. It is ok to use AI tools to explain the technical reasons behind an issue, but there needs to be clear context around why the issue is happening along with a reproduction of the problem.
+- Do not open drive-by PRs created by AI tools. These are often too narrowly focused, solve the wrong problem, or are a solution to something that isn't reproducible in a production environment.
+
+Pull requests and issues that ignore these guidelines might be closed at the maintainers' discretion.
